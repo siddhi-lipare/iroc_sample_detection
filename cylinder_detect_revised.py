@@ -76,7 +76,8 @@ while True:
             sample_pixels = get_sample_pixels(mask)
 
             # Write the sample pixels to the file
-            file.write("Sample pixels for object {}: {}\n".format(idx, sample_pixels))
+            # file.write("Sample pixels for object {}: {}\n".format(class_id, sample_pixels))
+            file.write("{}\n".format(sample_pixels))
 
             # Mark the sample pixels on the frame
             for (x, y) in sample_pixels:
